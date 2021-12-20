@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Contador con Vue</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <!-- normalize -->
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app" class="app">
+            <h1>{{title}}</h1>
+            <h3>{{count}}</h3>
+            <div class="buttons">
+                <button v-on:click="modCount('dis', 1)">-1</button>
+                <button @click="modCount('',1)">+1</button>
+            </div>
+        </div>
+
+        <!-- <div id="app-2">
+          <span v-bind:title="message">
+            Pasa el mouse sobre mi para ver el mensaje
+          </span>
+        </div>
+        <div id="app-3">
+          <span v-if="seen">Ahora me ves por que soy True</span>
+        </div> -->
+
+
+
+        <script src="script.js" type="text/javascript"></script>
+        <script src="mount.js" type="text/javascript"></script>
+    </body>
+</html>
